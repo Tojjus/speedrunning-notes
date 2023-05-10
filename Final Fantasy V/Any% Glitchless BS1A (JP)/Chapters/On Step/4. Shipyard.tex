@@ -1,0 +1,58 @@
+\chapter{Shipyard}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{menu}{Immediately After Gaining Control}
+	\varwb
+    \begin{jobMenu}
+        \lenna Blue Mage \textbf{(2\pointLeft)} \optimize
+        \galuf Blue Mage \textbf{(2\pointLeft)} \equip{\broadsword}
+        \faris Thief \textbf{(2\pointRight)}
+        \bartz Blue Mage \textbf{(2\pointLeft)} \optimize
+	\end{jobMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn
+\begin{steproute}{Before the Cutscene}
+    \insertStep{../Graphics/Steps/14. Shipyard Enc 1.jpg}
+    \insertStep{../Graphics/Steps/15. Shipyard 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{enumerate}
+    \item Grab the \pickup{990 Gil} in the crate with the skull
+    \item In this room, take the bottom door
+    \item Grab the \pickup{Potion} in the chest on the broken floor (right side)
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{After the Cutscene}
+    \insertStep{../Graphics/Steps/16. Shipyard Enc 2.jpg}
+    \insertStep{../Graphics/Steps/17. Shipyard 2 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/18. Shipyard 3 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/19. Shipyard 4.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Siren}
+    \varwb
+    \begin{round}{1}
+        \faris Defend
+        \everyone \leftCommand{\blue} \then \goblinPunch
+    \end{round}
+    \begin{round}{2}
+        \item \bossHl{Be careful if she used Haste}
+        \faris Wait
+        \begin{itemize}
+            \item \textit{If Siren kills someone} \then \battleGroup{\textbf{\phoenixDown}}
+            \item \textit{Otherwise} \then \battleGroup{\textbf{Defend}}
+        \end{itemize}
+        \everyone \leftCommand{\blue} \then \goblinPunch
+    \end{round}
+    \varwe
+\end{boss}
+
+\end{paracol}

@@ -1,0 +1,135 @@
+\chapter{Kelb}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Make your way back to Kelb
+    \item Go to the Magic Shop
+\end{enumerate}
+
+\begin{shop}{Kelb Magic Shop}
+    \varwb
+    \begin{buy}
+        \item \textit{Right Wolf}
+        \begin{itemize}
+            \item \shopHl{(3)} \reset
+        \end{itemize}
+        \item \textit{Left Wolf}
+        \item \begin{itemize}
+            \item \shopHl{(2)} \breakSpell
+        \end{itemize}
+    \end{buy}
+    \varwe
+\end{shop}
+
+\begin{enumerate}[resume]
+    \item Go to the Armory
+\end{enumerate}
+
+\begin{shop}{Kelb Armory}
+    \varwb
+    \begin{sell}
+        \item \goldArmor
+        \item \iceBow
+        \item \powerWrist
+        \item \silkRobe
+        \item \ether
+    \end{sell}
+    \begin{buy}
+        \item \textit{Right Side, Left Wolf}
+        \begin{itemize}
+            \item \shopHl{(5)} \flameScroll \space \shopHl{(x4)}
+            \item \shopHl{(7)} \thunderScroll \space \shopHl{(x11)}
+        \end{itemize}
+        \item \textit{Left Side, Right Wolf}
+        \begin{itemize}
+            \item \shopHl{(3)} \greenBeret \space \shopHl{(x1)}
+            \item \shopHl{(6)} \stealthRobe \space \shopHl{(x1)}
+        \end{itemize}
+    \end{buy}
+    \varwe
+\end{shop}
+
+\begin{enumerate}[resume]
+    \item Go to the Inn
+\end{enumerate}
+
+\begin{menu}{Before the Inn Shop}
+    \varwb
+    \begin{jobMenu}
+        \faris Ninja \textbf{(\pointLeft)(\pointDown)(\pointLeft)} \optimize
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{shop}{Kelb Inn}
+    \varwb
+    \begin{buy}
+        \item \textit{Bottom Wolf}
+        \begin{itemize}
+            \item \shopHl{(6)} \speedDrink \space \shopHl{(x1)}
+            \item \shopHl{(8)} \heroDrink \space \shopHl{(x3)}
+            \item \shopHl{(2)} \revivify \space \shopHl{(x1)}
+        \end{itemize}
+        \item \textit{Top Wolf}
+        \item \begin{itemize}
+            \item \shopHl{(1)} \hiPotion \space \shopHl{(x11)}
+            \item \shopHl{(8)} \antidote \space \shopHl{(x11)}
+            \item \shopHl{(7)} \eyedrop \space \shopHl{(x11)}
+            \item \shopHl{(5)} \maidensKiss \space \shopHl{(x2)}
+        \end{itemize}
+    \end{buy}
+    \begin{itemize}
+        \item \shopNote{You need to have less than 1500 Gil leaving the shop}
+    \end{itemize}
+    \varwe
+\end{shop}
+
+\begin{enumerate}[resume]
+    \item Start heading towards Bal
+\end{enumerate}
+
+\begin{menu}{Before the Encounter}
+    \varwb
+    \begin{itemMenu}
+        \antidoteMenu \ally{Anyone poisoned}
+        \hiPotionMenu \ally{Anyone low on HP}
+    \end{itemMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn*
+\begin{steproute}{Kornago, Weresnake, Aquathone}
+    \insertStep{../Graphics/Steps/124. Bal Enc 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{encounter}{Kornago, Weresnake, Aquathone}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris \leftCommand{\throw} \then \airBlade \space \then \enemy{Aquathone}
+        \galuf Defend
+        \bartz \leftCommand{\gilToss}
+        \lenna \leftCommand{\catch}
+	\end{round}
+    \begin{itemize}
+        \item \encounterNote{Stall with HiPotions if Lenna gets paralyzed}
+    \end{itemize}
+	\varwe
+\end{encounter}
+
+\begin{enumerate}[resume]
+    \item Return to Bal
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{After the Encounter}
+    \insertStep{../Graphics/Steps/125. Bal 2.jpg}
+\end{steproute}
+
+\end{paracol}

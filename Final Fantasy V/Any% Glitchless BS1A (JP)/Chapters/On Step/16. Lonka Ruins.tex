@@ -1,0 +1,110 @@
+\chapter{Lonka Ruins}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item \battleGroup{Escape is the right command}
+    \item Grab the \pickup{Gold Armor} chest on the 2nd screen
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before HiPotion Chest}
+    \insertStep{../Graphics/Steps/74. Lonka Ruins Enc 1.jpg}
+    \insertStep{../Graphics/Steps/75. Lonka Ruins 1.jpg}
+    \insertStep {../Graphics/Steps/76. Lonka Ruins 2.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{HiPotion} before the 3rd step manipulation
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Treasure Room}
+    \insertStep{../Graphics/Steps/77. Lonka Ruins 3.jpg}
+\end{steproute}
+
+\switchcolumn*
+\newpage
+\begin{enumerate}[resume]
+    \item Grab all five chests in the treasure room: \pickup{Shuriken, 5000 Gil, Ancient Sword, Full Moon, and Power Ring}
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Treasure Room}
+    \insertMisc{../Graphics/Misc/10. Lonka Ruins Chests.png}
+\end{misc}
+
+\begin{steproute}{Before Cabin and Ether Chests}
+    \insertStep{../Graphics/Steps/78. Lonka Ruins 4.jpg}
+    \insertStep{../Graphics/Steps/79. Lonka Ruins 5.jpg}
+    \insertStep{../Graphics/Steps/80. Lonka Ruins 6.jpg}
+    \insertStep{../Graphics/Steps/81. Lonka Ruins Enc 2.jpg}
+    \insertStep{../Graphics/Steps/82. Lonka Ruins 7.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Cabin} and \pickup{Ether} chests after the 7th step manipulation
+\end{enumerate}
+
+\begin{menu}{Before Archeoaevis}
+    \varwb
+    \begin{notes}
+        \item \menuHl{Heal if necessary}
+    \end{notes}
+    \begin{jobMenu}
+        \bartz Blue Mage \textbf{(\pointDown)(4\pointRight)} \optimize \space \equip{\thunderRod}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+
+\switchcolumnTwice
+\begin{boss}{Archeoaevis}
+	\varwb
+	\begin{round}{1}
+		\lenna \leftCommand{\throw} \then \thunderScroll
+        \galuf Defend
+        \item \bossHl{Don't run buffer Faris or Bartz's turns}
+        \item \bossHl{Lenna should be nearly at full ATB after Bartz's turn}
+        \faris \leftCommand{\gaia}
+        \bartz Item \then \battleGroup{\thunderRod} \then Break
+	\end{round}
+    \begin{round}{2}
+        \lenna \leftCommand{\throw} \then \thunderScroll
+        \galuf Defend
+        \faris \leftCommand{\gaia}
+        \lenna \leftCommand{\throw} \then \thunderScroll
+        \bartz Defend
+    \end{round}
+    \begin{round}{3}
+        \galuf \leftCommand{\throw} \then \thunderScroll
+        \faris \leftCommand{\gaia}
+        \lenna \leftCommand{\throw} \then \shuriken
+        \galuf \leftCommand{\throw} \then \ancientSword
+    \end{round}
+    \begin{round}{4 (After Transition)}
+        \bartz \leftCommand{\blue} \then \lfiveDeath
+    \end{round}
+	\varwe
+\end{boss}
+
+\switchcolumnTwice[*]
+\begin{menu}{After Archeoaevis}
+    \varwb
+    \begin{jobMenu}
+        \lenna Thief \textbf{(2\pointRight)} \ability{!\tame}
+        \galuf Thief \textbf{(2\pointRight)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn
+\begin{steproute}{Before Leaving}
+    \insertStep{../Graphics/Steps/83. Lonka Ruins 8.jpg}
+\end{steproute}
+
+\end{paracol}

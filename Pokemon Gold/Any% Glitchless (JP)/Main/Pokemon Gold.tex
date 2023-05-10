@@ -1,0 +1,231 @@
+\documentclass[a4paper]{report}
+\input{Translations.tex}
+\usepackage[group-separator={,},group-minimum-digits={3}]{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[margin=0.2in, paperwidth=12in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{titlepic}
+\usepackage{CJKutf8}
+\usepackage{soulutf8}
+\usepackage{varwidth}
+\usepackage{tocloft}
+\usepackage{paracol}
+\usepackage{tabu}
+
+%----------page setup----------%
+\definecolor{pageColor}{RGB}{240, 240, 240}
+\pagecolor{pageColor}
+\setlength{\columnsep}{.5cm}
+\hfuzz=49pt 
+
+%----------chapter setup----------%
+\makeatletter
+\def\@makechapterhead#1{%
+  {\parindent \z@ \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries #1
+        \par\nobreak
+        \rule{\columnwidth}{.1pt}%
+    \fi
+    \interlinepenalty\@M
+  }}
+\makeatother
+
+%----------hyperlinks----------%
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%----------misc setup----------%
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\usepackage{graphicx}
+
+\pagenumbering{gobble}
+\setlength{\columnsep}{1.5cm}
+\setlength{\columnseprule}{0.2pt}
+
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}
+
+%---------toc--------------%
+\setlength{\cftbeforetoctitleskip}{-3.5mm}
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries}
+\renewcommand{\cftaftertoctitle}{\par\nobreak\rule{\columnwidth}{.1pt}}
+
+%----------style overrides----------%
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\ast$}
+\renewcommand{\labelitemiv}{$-$}
+\renewcommand{\familydefault}{\sfdefault}
+
+%----------convenience commands----------%
+\newcommand{\varwb}{\begin{varwidth}{\textwidth}}
+\newcommand{\varwe}{\end{varwidth}}
+\newcommand{\resume}{\vspace{-1pc}}
+\newcommand{\alignBoxes}{\vspace{1.05mm}}
+\newcommand{\switchcolumnTwice}[1][]{\switchcolumn\switchcolumn#1}
+\newcommand{\insertScreenshot}[1]{\includegraphics[scale=0.3]{#1}}
+\newcommand{\insertPath}[1]{\includegraphics[scale=0.5]{#1}}
+\newcommand{\insertMap}[1]{\includegraphics[scale=1.1]{#1}}
+
+%----------arrows and symbols----------%
+\newcommand{\pointUp}{\textbf{↑}}
+\newcommand{\pointDown}{\textbf{↓}}
+\newcommand{\pointLeft}{\textbf{←}}
+\newcommand{\pointRight}{\textbf{→}}
+\newcommand{\switch}{\textbf{↔}}
+
+%----------base colors----------%
+\definecolor{red}{RGB}{234, 52, 35}
+\definecolor{blue}{RGB}{47, 152, 222}
+\definecolor{purple}{RGB}{139, 70, 229}
+\definecolor{pink}{RGB}{235, 18, 127}
+\definecolor{orange}{RGB}{245, 122, 0}
+\definecolor{green}{RGB}{0, 181, 133}
+\definecolor{yellow}{RGB}{253, 255, 84}
+
+%----------colorbox colors----------%
+\definecolor{menu}{RGB}{72, 188, 72}
+\colorlet{menuHl}{menu!75}
+\colorlet{menuHlTwo}{menu!65>wheel,1,2}
+\definecolor{shop}{RGB}{228, 162, 9}
+\colorlet{shopHl}{shop!70}
+\colorlet{shopHlTwo}{shop!50>wheel,1,2}
+\colorlet{shopHlThree}{shop!40>twheel,1,2}
+\definecolor{boss}{RGB}{229, 51, 51}
+\colorlet{bossHl}{boss!65}
+\colorlet{bossHlTwo}{boss!65>wheel,1,2}
+\colorlet{bossHlThree}{boss!70>twheel,1,2}
+\definecolor{trainer}{RGB}{223, 113, 168}
+\colorlet{trainerHl}{trainer!75}
+\colorlet{trainerHlTwo}{trainer!90>wheel,1,2}
+\colorlet{trainerHlThree}{trainer!95>twheel,1,2}
+\definecolor{story}{RGB}{79, 173, 235}
+\colorlet{storyHl}{story!75}
+\colorlet{storyHlTwo}{story!75>wheel,1,2}
+\definecolor{encounter}{RGB}{252, 138, 25}
+\colorlet{encounterHl}{encounter!70}
+\colorlet{encounterHlTwo}{encounter!65>wheel,1,2}
+\colorlet{encounterHlThree}{encounter!65>twheel,1,2}
+\definecolor{misc}{RGB}{9, 191, 198}
+\colorlet{miscHl}{misc!75}
+\definecolor{items}{RGB}{155, 77, 240}
+\colorlet{itemsHl}{items!75}
+
+%----------additional colors----------%
+\colorlet{dialog}{orange}
+\colorlet{pickup}{purple}
+\colorlet{emphasis}{pink}
+\colorlet{toss}{red}
+\colorlet{atkDV}{red!95!misc}
+\colorlet{spcDV}{orange!95!misc}
+
+%----------highlights----------%
+\newcommand{\menuHl}[1]{\sethlcolor{menuHl}\textbf{\hl{#1}}}
+\newcommand{\menuHlTwo}[1]{\sethlcolor{menuHlTwo}\textbf{\hl{#1}}}
+\newcommand{\shopHl}[1]{\sethlcolor{shopHl}\textbf{\hl{#1}}}
+\newcommand{\shopHlTwo}[1]{\sethlcolor{shopHlTwo}\textbf{\hl{#1}}}
+\newcommand{\shopHlThree}[1]{\sethlcolor{shopHlThree}\textbf{\hl{#1}}}
+\newcommand{\trainerHl}[1]{\sethlcolor{trainerHl}\textbf{\hl{#1}}}
+\newcommand{\trainerHlTwo}[1]{\sethlcolor{trainerHlTwo}\textbf{\hl{#1}}}
+\newcommand{\trainerHlThree}[1]{\sethlcolor{trainerHlThree}\textbf{\hl{#1}}}
+\newcommand{\trainerHlThreeNoBold}[1]{\sethlcolor{trainerHlThree}\hl{#1}}
+\newcommand{\bossHl}[1]{\sethlcolor{bossHl}\textbf{\hl{#1}}}
+\newcommand{\bossHlTwo}[1]{\sethlcolor{bossHlTwo}\textbf{\hl{#1}}}
+\newcommand{\bossHlThree}[1]{\sethlcolor{bossHlThree}\textbf{\hl{#1}}}
+\newcommand{\miscHl}[1]{\sethlcolor{miscHl}\textbf{\hl{#1}}}
+\newcommand{\storyHl}[1]{\sethlcolor{storyHl}\textbf{\hl{#1}}}
+\newcommand{\storyHlTwo}[1]{\sethlcolor{storyHlTwo}\textbf{\hl{#1}}}
+\newcommand{\encounterHl}[1]{\sethlcolor{encounterHl}\textbf{\hl{#1}}}
+\newcommand{\encounterHlTwo}[1]{\sethlcolor{encounterHlTwo}\textbf{\hl{#1}}}
+\newcommand{\encounterHlThree}[1]{\sethlcolor{encounterHlThree}\textbf{\hl{#1}}}
+\newcommand{\bossSwap}[1]{\newbox\content \sbox\content{Swap #1} \bossHlThree{{\usebox\content}}}
+\newcommand{\bossNote}[1]{\newbox\content \sbox\content{#1} \bossHlThree{{\usebox\content}}}
+\newcommand{\trainerSwap}[1]{\newbox\content \sbox\content{Swap #1} \trainerHlThree{{\usebox\content}}}
+
+%----------color boxes----------%
+\newtcolorbox{menu}[2][]{colframe=menu!55, colback=menu!20, coltitle=menu!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{trainer}[2][]{colframe=trainer!55, colback=trainer!20, coltitle=trainer!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{shop}[2][]{colframe=shop!55, colback=shop!20, coltitle=shop!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{boss}[2][]{colframe=boss!55, colback=boss!20, coltitle=boss!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{story}[2][]{colframe=story!55, colback=story!20, coltitle=story!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{misc}[2][]{colframe=misc!55, colback=misc!20, coltitle=misc!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{encounter}[2][]{colframe=encounter!55, colback=encounter!20, coltitle=encounter!20!black, title={\textbf{#2}}, #1}
+\newtcolorbox{items}[2][]{colframe=items!55, colback=items!20, coltitle=items!20!black, title={\textbf{#2}}, #1}
+
+%----------color box item options----------%
+\newcommand{\menuOrder}[1]{\newbox\backup\sbox\backup{\textbf{\ul{(#1)}}}\menuHl{{\usebox\backup}}}
+\newcommand{\storyOrder}[1]{\newbox\backup\sbox\backup{\textbf{\ul{(#1)}}}\storyHl{{\usebox\backup}}}
+\newenvironment{optionMenu}{\begin{itemize}\item\menuOrder{3}\ul{ Option}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{packMenu}{\begin{itemize}\item\menuOrder{3}\ul{ Pack}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{gearMenu}{\begin{itemize}\item\menuOrder{4}\ul{ PokeGear}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{pokeMenu}{\begin{itemize}\item\menuOrder{2}\ul{ Pokemon}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{pokeMenuNoPokedex}{\begin{itemize}\item\menuOrder{1}\ul{ Pokemon}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{pokeMenuStory}{\begin{itemize}\item\storyOrder{1}\ul{ Pokemon}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{fightSection}[1]{\begin{itemize}\item\ul{#1}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{buy}{\begin{itemize}\item\ul{Buy}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{sell}{\begin{itemize}\item\ul{Sell}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{shopSection}[1]{\begin{itemize}\item\ul{#1}\begin{itemize}}{\end{itemize}\end{itemize}}
+\newenvironment{notes}{\begin{itemize}}{\end{itemize}}
+
+%----------commands----------%
+\newcommand{\pickup}[1]{\textbf{\textcolor{pickup}{#1}}}
+\newcommand{\dialog}[1]{\textbf{\textcolor{dialog}{#1}}}
+\newcommand{\emphasis}[1]{\textbf{\textcolor{emphasis}{#1}}}
+\newcommand{\toss}[1]{\textbf{\textcolor{toss}{#1}}}
+\newcommand{\atkDV}[1]{\textbf{\textcolor{atkDV}{#1}}}
+\newcommand{\spcDV}[1]{\textbf{\textcolor{spcDV}{#1}}}
+
+%----------title----------%
+\title{\textbf{\Huge{Pokemon Gold \\ 
+  Any\% Glitchless}}}
+\author{\LARGE{by Tojju}}
+\date{\vspace{-5ex}}
+\titlepic{\includegraphics[scale=0.4]{../Graphics/1. Logo.png}}
+\begin{document}
+\singlespacing
+\maketitle
+\tableofcontents
+\addtocontents{toc}{\vspace{-1cm}}
+
+%----------acknowledgements----------%
+\section*{Acknowledgements}
+Lembox, sizzleskeleton, MrTyton
+
+\input{../Chapters/1. Beginning.tex}
+\input{../Chapters/2. New Bark Town.tex}
+\input{../Chapters/3. Violet Town.tex}
+\input{../Chapters/4. Azalea Town.tex}
+\input{../Chapters/5. Goldenrod City.tex}
+\input{../Chapters/6. Ecruteak City.tex}
+\input{../Chapters/7. Olivine City.tex}
+\input{../Chapters/8. Cianwood City.tex}
+\input{../Chapters/9. Mahogany Town.tex}
+\input{../Chapters/10. Lighthouse.tex}
+\input{../Chapters/11. Radio Tower.tex}
+\input{../Chapters/12. Underground.tex}
+\input{../Chapters/13. Ice Path.tex}
+\input{../Chapters/14. Blackthorn City.tex}
+\input{../Chapters/15. Victory Road.tex}
+\input{../Chapters/16. Elite Four.tex}
+\input{../Chapters/17. Kanto Arrival.tex}
+\input{../Chapters/18. Marsh and Cascade Badges.tex}
+\input{../Chapters/19. Thunder and Boulder Badges.tex}
+\input{../Chapters/20. Volcano and Soul Badges.tex}
+\input{../Chapters/21. Blue and Red.tex}
+
+%----------end of document----------%
+\end{document}

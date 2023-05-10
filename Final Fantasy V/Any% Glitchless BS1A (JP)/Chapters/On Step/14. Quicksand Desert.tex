@@ -1,0 +1,96 @@
+\chapter{Quicksand Desert}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{boss}{Sandworm}
+    \varwb
+    \begin{round}{1}
+        \bartz Defend
+        \faris Item \then \battleGroup{Equip \kunai} \then \leftCommand{\throw} \then \waterScroll
+        \lenna \leftCommand{\throw} \then \waterScroll
+        \item \bossMenu{\textbf{Thunder Scrolls:} slot 1}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/5. Sandworm Menu.png}
+        \galuf \leftCommand{\throw} \then \waterScroll
+    \end{round}
+    \varwe
+\end{boss}
+
+\switchcolumnTwice[*]
+\begin{menu}{After Sandworm}
+    \varwb
+    \begin{jobMenu}
+        \galuf White Mage \textbf{(\pointDown)}
+        \lenna Mediator \textbf{(\pointDown)(\pointLeft)(\pointDown)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \galuf \cure \space \then \ally{All to full}
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\begin{encounter}{Sand Killer x2 (x2)}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Hold A entering the encounters}
+	\end{notes}
+	\begin{round}{1}
+		\faris \leftCommand{\throw} \then \waterScroll
+	\end{round}
+	\varwe
+\end{encounter}
+
+\switchcolumn
+\newpage
+\begin{steproute}{Quicksand Desert Encounters}
+    \includegraphics[scale=0.448]{../Graphics/Steps/66. Quicksand Enc 1.jpg}
+    \insertStep{../Graphics/Steps/67. Quicksand Enc 2.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}
+    \item Follow this path through the desert
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Desert Path}
+    \insertMisc{../Graphics/Misc/7. Quicksand 1.png}
+    \insertMisc{../Graphics/Misc/8. Quicksand 2.png}
+    \insertMisc{../Graphics/Misc/9. Quicksand 3.png}
+\end{misc}
+
+\switchcolumn*
+\resume
+\begin{enumerate}[resume]
+    \item Head towards the Ancient Ruins
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Ancient Ruins}
+    \insertStep{../Graphics/Steps/68. Ancient Ruins 1.jpg}
+    \insertStep{../Graphics/Steps/69. Ancient Ruins 2.jpg}
+\end{steproute}
+
+\switchcolumn
+\resume
+\begin{enumerate}[resume]
+    \item Move to the front of the stairs
+    \item Lure Tycoon northwest
+    \item Corner him in the building in the centre
+    \item On the airship, follow Cid downstairs when they leave
+    \item Talk to Cid a second time once you regain control
+\end{enumerate}
+
+\begin{boss}{Crayclaw}
+    \varwb
+    \begin{round}{1}
+        \faris \leftCommand{\throw} \then \thunderScroll
+        \bartz Defend
+        \lenna \leftCommand{\release}
+    \end{round}
+    \varwe
+\end{boss}
+
+\end{paracol}

@@ -1,0 +1,65 @@
+\chapter{Grociana}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Make your way towards the underground
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{No Encounter Zones}
+    \insertStep{../Graphics/Steps/100. Grociana 9.jpg}
+    \insertStep{../Graphics/Steps/101. Grociana 10.jpg}
+\end{steproute}
+
+\switchcolumn
+\resume
+\begin{enumerate}[resume]
+    \item Grab the \pickup{4400 Gil} chest in the underground
+\end{enumerate}
+
+\begin{menu}{Before Tyrasaurus}
+    \varwb
+    \begin{jobMenu}
+        \bartz Samurai \textbf{(\pointLeft)(\pointDown)}
+        \lenna Mediator \textbf{(\pointUp)}
+        \galuf Thief \textbf{(2\pointRight)}
+    \end{jobMenu}
+    \begin{itemMenu}
+        \hiPotionMenu \ally{People missing 100+ HP (two max)}
+    \end{itemMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Tyrasaurus}
+    \varwb
+    \begin{round}{1 (Onwards)}
+        \everyone \phoenixDown \space \then \enemy{Tyrasaurus}
+    \end{round}
+    \begin{itemize}
+        \item \newbox\backup \sbox\backup{\textbf{\ul{If You Run Out of Phoenix Downs}}} \bossHl{{\usebox\backup}} 
+        \begin{itemize}
+            \anyone \elixir \space \then \enemy{Tyrasaurus}
+            \anyone \potion \space \then \enemy{Tyrasaurus}
+        \end{itemize}
+    \end{itemize}
+    \varwe
+\end{boss}
+
+\switchcolumn*
+\begin{misc}{Moogle Village Chests}
+    \insertMisc{../Graphics/Misc/15. Moogle Village Chests.png}
+\end{misc}
+
+\switchcolumn
+\begin{enumerate}[resume]
+    \item Head toward Moogle Village
+    \item You can't get encounters on the forest tiles
+    \item Head to the top right of the village and talk to the moogle to start the internal timer
+    \item Talk to the moogle inside the tree
+    \item Grab all the chests except the top right one: \pickup{Cabin, Dancing Dagger, 10000 Gil, Phoenix Down, and Ether}
+\end{enumerate}
+
+\end{paracol}

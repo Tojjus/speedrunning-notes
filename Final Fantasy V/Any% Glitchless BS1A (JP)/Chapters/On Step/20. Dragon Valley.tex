@@ -1,0 +1,134 @@
+\chapter{Dragon Valley}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Grab the \pickup{Exit} spell in the bottom left of the throne room
+    \item Go to Cara on the rooftop
+    \item Make your way to Kelb
+\end{enumerate}
+
+\begin{boss}{Abductor}
+	\varwb
+	\begin{round}{1}
+		\galuf Defend
+        \faris \leftCommand{\gilToss}
+    \end{round}
+	\varwe
+\end{boss}
+
+\switchcolumn*
+\vspace{-1cm}
+\begin{steproute}{Before Bal}
+    \insertStep{../Graphics/Steps/111. Bal 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{After the Half Step}
+    \varwb
+    \begin{itemMenu}
+        \hiPotionMenu \ally{Whoever was hit by Abductor}
+    \end{itemMenu}
+    \begin{jobMenu}
+        \bartz Thief \textbf{(2\pointRight)} \ability{!\escape} \optimize
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+    \item Enter the biggest mansion, walk one tile inside, then leave
+    \item Head north to Dragon Valley
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Getting the Bone Mail}
+    \insertStep{../Graphics/Steps/112. Dragon Valley 1.jpg}
+    \insertStep{../Graphics/Steps/113. Dragon Valley 2.jpg}
+    \insertStep{../Graphics/Steps/114. Dragon Valley Enc 1.jpg}
+    \insertStep{../Graphics/Steps/115. Dragon Valley 3.jpg}
+    \insertStep{../Graphics/Steps/116. Dragon Valley 4 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/117. Dragon Valley 5 (Re-enter).jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Bone Mail} on the pile of bones
+    \item Grab the \pickup{7000 Gil} after activating the switch
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Getting the Coronet and Air Blade}
+    \insertStep{../Graphics/Steps/118. Dragon Valley 6.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Coronet} and \pickup{Air Blade} southern part of the cave
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Getting the Phoenix Down}
+    \insertStep{../Graphics/Steps/119. Dragon Valley Enc 2.jpg}
+    \insertStep{../Graphics/Steps/120. Dragon Valley Enc 3.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Phoenix Down} before exiting
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Hiryuu Plant}
+    \insertStep{../Graphics/Steps/121. Dragon Valley 7 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/122. Dragon Valley 8.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{Before Hiryuu Plant}
+    \varwb
+    \begin{jobMenu}
+        \bartz Samurai \textbf{(\pointLeft)(\pointDown)} \equip{\dancingDagger}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Hiryuu Plant}
+    \varwb
+    \begin{round}{1}
+        \galuf Defend
+        \faris \leftCommand{\gilToss}
+        \bartz \leftCommand{\gilToss}
+        \item \bossMenu{\textbf{Gold Armor:} slot 1 \mbox{\pointRight} \textbf{Power Wrist:} up}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/8. Hiryuu Menu.png}
+        \lenna Defend
+    \end{round}
+    \begin{round}{2}
+        \galuf Defend
+        \faris \leftCommand{\gilToss}
+        \bartz \leftCommand{\gilToss}
+    \end{round}
+    \varwe
+\end{boss}
+
+\switchcolumn*
+\vspace{-2.15cm}
+\begin{steproute}{After Hiryuu Plant}
+    \insertStep{../Graphics/Steps/123. Dragon Valley 9.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{After Hiryuu Plant}
+    \varwb
+    \begin{jobMenu}
+        \faris Time Mage \textbf{(2\pointLeft)(\pointUp)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \faris \exit
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\end{paracol}

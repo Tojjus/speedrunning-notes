@@ -1,0 +1,83 @@
+\chapter{Karnak Escape}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Use the pot to heal to full HP
+    \item Grab the \pickup{2000 Gil} chest in the cell
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{After Getting the Chest}
+    \insertStep{../Graphics/Steps/41. Karnak Escape 1 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/42. Karnak Escape 2.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab these two \pickup{2000 Gil} chests in the upstairs rooms
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Upstairs Chests}
+    \insertScreenshot{../Graphics/Misc/5. Karnak Chest 2.png}
+    \insertScreenshot{../Graphics/Misc/6. Karnak Chest 3.png}
+\end{misc}
+
+\switchcolumnTwice*
+\begin{steproute}{Before Sergeant}
+    \insertStep{../Graphics/Steps/43. Karnak Escape 3.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Sergeant}
+    \varwb
+    \begin{round}{1}
+        \bartz Defend
+        \faris Item \then \battleGroup{Equip \iceRod} \then Break
+        \item \bossHl{Don't queue the second Ice Rod until the Karnaks die}
+        \lenna Item \then \battleGroup{\iceRod} \then Break
+    \end{round}
+    \varwe
+\end{boss}
+
+\begin{enumerate}[resume]
+    \item Head back to Karnak
+    \item Enter the magic shop
+\end{enumerate}
+
+\begin{shop}{Karnak Magic Shop}
+    \varwb
+    \begin{buy}[ (Left Wizard)]
+        \item \shopHl{(2)} \life
+    \end{buy}
+    \varwe
+\end{shop}
+
+\begin{enumerate}[resume]
+    \item Take the left door to the armory
+\end{enumerate}
+
+\begin{shop}{Karnak Armory Shop}
+    \varwb
+    \begin{itemize}
+        \item \shopNote{Left Side}
+    \end{itemize}
+    \begin{buy}
+        \item \shopHl{(6)} \silkRobe \space \shopHl{x1}
+    \end{buy}
+    \begin{itemize}
+        \item \shopNote{Right Side}
+    \end{itemize}
+    \begin{buy}
+        \item \shopHl{(1)} \mythrilKnife \space \shopHl{x1}
+        \item \shopHl{(4)} \fireRod \space \shopHl{x2}
+        \item \shopHl{(5)} \iceRod \space \shopHl{x1}
+        \item \shopHl{(6)} \thunderRod \space \shopHl{x2}
+    \end{buy}
+    \varwe
+\end{shop}    
+
+\end{paracol}

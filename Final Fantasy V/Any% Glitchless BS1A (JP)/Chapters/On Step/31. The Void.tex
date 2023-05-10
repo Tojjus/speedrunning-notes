@@ -1,0 +1,116 @@
+\chapter{The Void}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item \battleGroup{Escape is the left command}
+    \item Make your way towards Exdeath
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{The Void}
+    \insertStep{../Graphics/Steps/204. Void 1.jpg}
+    \insertStep{../Graphics/Steps/205. Void Enc 1.jpg}
+    \insertStep{../Graphics/Steps/206. Void Enc 2.jpg}
+    \insertStep{../Graphics/Steps/207. Void 2.jpg}
+    \insertStep{../Graphics/Steps/208. Void Enc 3.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{menu}{After the Cutscene}
+	\varwb
+    \begin{abilityMenu}
+        \bartz \ability{!\gilToss} \optimize
+        \lenna \ability{!\cover} 
+        \begin{itemize}
+            \item[] \equip{\knife, \crystalShield}
+        \end{itemize}
+    \end{abilityMenu}
+    \begin{jobMenu}
+        \faris Blue Mage \textbf{(\pointDown)(\pointLeft)(\pointDown)} \ability{\combine} 
+        \begin{itemize}
+            \item[] \equip{\runningShoes}
+        \end{itemize} 
+        \cara Monk \textbf{(\pointRight)} \ability{!\gilToss} \optimize
+    \end{jobMenu}
+    \begin{rowMenu}
+        \swap Cara \switch Faris
+        \swap Lenna \switch Bartz
+    \end{rowMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn
+\begin{misc}{Menu Here}
+    \insertScreenshot{../Graphics/Misc/22. Exdeath Menu.png}
+\end{misc}
+
+\switchcolumn
+\begin{boss}{Exdeath}
+    \varwb
+    \begin{bossPart}{Part 1 (Prep Lenna)}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \maidensKiss} \textit{(KISS OF BLESSING)} \then \ally{Lenna}
+        \faris[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\eyedrop \space + \space \antidote{}} \textit{(RESTORATIVE)} \then \ally{Lenna}
+        \cara[\bossHl{(1x)}] Defend
+        \lenna[\bossHl{(1x)}] \leftCommand{\magicSword} \then \breakSpell
+    \end{bossPart}
+    \begin{bossPart}{Part 2 (Buff Cara)}
+        \bartzFaris[\bossHl{(4x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \antidote} \textit{(SAMSON POWER)} \then \ally{Cara}
+        \lenna[\bossHl{(Rest)}] Defend
+        \cara[\bossHl{(1x)}] Defend
+        \bartzFaris[\bossHl{(4x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \antidote} \textit{(SAMSON POWER)} \then \ally{Cara}
+        \cara[\bossHl{(1x)}] \leftCommand{\kick}
+    \end{bossPart}
+    \begin{bossPart}{Part 3 (Buff Bartz)}
+        \bartzFaris[\bossHl{(4x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \antidote} \textit{(SAMSON POWER)} \then \ally{Bartz}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \bartzFaris[\bossHl{(2x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \antidote} \textit{(SAMSON POWER)} \then \ally{Bartz}
+    \end{bossPart}
+    \begin{bossPart}{Part 4 (Prep Cara)}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \maidensKiss} \textit{(KISS OF BLESSING)} \then \ally{Cara}
+        \faris[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\eyedrop \space + \space \antidote{}} \textit{(RESTORATIVE)} \then \ally{Cara}
+        \item \bossNote{Let Exdeath get a turn here}
+    \end{bossPart}
+    \begin{bossPart}{Part 5}
+        \bartz[\bossHl{(1x)}] \leftCommand{\gilToss}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \faris[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \space \antidote} \textit{(SAMSON POWER)} \then \ally{Bartz}
+    \end{bossPart}
+    \begin{bossPart}{Part 6}
+        \bartz[\bossHl{(1x)}] \leftCommand{\gilToss}
+        \item \bossNote{Make sure Faris has full ATB}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\begin{boss}{Neo Exdeath}
+    \varwb
+    \begin{bossPart}{Part 1}
+        \item \bossNote{Wait for him to appear before queuing L.2 Old}
+        \faris[\bossHl{(1x)}] \leftCommand{\blue} \then \ltwoOld
+        \lenna[\bossHl{(1x)}] Fight \then \enemy{the body (\pointDown)}
+        \bartz[\bossHl{(1x)}] Defend
+        \cara[\bossHl{(1x)}] \leftCommand{\kick}
+    \end{bossPart}
+    \begin{bossPart}{Part 2}
+        \faris[\bossHl{(1x)}] Wait for his attack \then \leftCommand{\blue} \then \lfiveDeath[\newline]
+        \lennaFaris[\bossHl{(Rest)}] Defend
+        \begin{itemize}
+            \item \bossNote{If Break missed Lenna needs to attack again}
+        \end{itemize}
+        \bartz[\bossHl{(1x)}] \leftCommand{\gilToss}
+        \cara[\bossHl{(1x)}] \leftCommand{\kick}
+    \end{bossPart}
+    \begin{bossPart}{Part 3}
+        \bartz[\bossHl{(3x)}] \leftCommand{\gilToss}
+        \cara[\bossHl{(1x)}] Fight \then \enemy{the head}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \cara[\bossHl{(1x)}] Fight \then \enemy{the head}
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\end{paracol}

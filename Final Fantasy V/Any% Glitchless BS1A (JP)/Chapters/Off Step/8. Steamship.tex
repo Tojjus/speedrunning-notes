@@ -1,0 +1,102 @@
+\chapter{Steamship}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{menu}{After Entering the Steamship}
+    \varwb
+    \begin{itemMenu}
+        \antidoteMenu \ally{Faris}
+        \potionMenu \ally{Faris (twice)}
+        \item \menuHl{Ensure Ice Rod is slot 1}
+        \item[] \includegraphics[scale=1.24]{../Graphics/Battle/3. Steamship Menu.png}
+    \end{itemMenu}
+    \begin{rowMenu}
+        \swap Bartz \switch Galuf
+    \end{rowMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}
+    \item Grab the \pickup{Phoenix Down} by the world map
+\end{enumerate}
+
+\switchcolumn
+\newpage
+\begin{steproute}{Steamship Encounter Options}
+    \begin{itemize}[leftmargin=*]
+        \item[] Any four-enemy encounter without Poltergeists will suffice
+        \item[] 
+        \item[] \includegraphics{../Graphics/Off Step Route/1. Poltergeist.png}
+    \end{itemize}
+\end{steproute}
+
+\switchcolumn
+\begin{encounter}{Defeater x2 and CrewDust x2 (186 EXP)}
+    \varwb
+    \begin{notes}
+        \item \encounterHl{Don't flee buffer}
+        \item \encounterHl{You need to do inputs FAST}
+    \end{notes}
+    \begin{round}{1}
+        \bartz Fight \then \ally{Galuf}
+        \begin{notes}
+            \item[] \encounterNote{(A)(\pointRight)(A)}
+        \end{notes}
+        \faris Defend
+        \begin{notes}
+            \item[] \encounterNote{(Hold R+A)}
+        \end{notes}
+        \lenna Item \then \battleGroup{Equip \iceRod} \then Break
+        \begin{notes}
+            \item[] \encounterNote{(\pointDown)(2A)(\pointUp)(3A)}
+        \end{notes}
+    \end{round}
+    \varwe
+\end{encounter}
+
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Elixir} before entering the boss room
+\end{enumerate}
+
+\begin{menu}{Before Liquid Flame}
+    \varwb
+    \begin{jobMenu}
+        \lenna Time Mage \textbf{(\pointDown)} \optimize
+        \faris Red Mage \textbf{(2\pointLeft)} \optimize
+    \end{jobMenu}
+    \begin{magicMenu}
+        \faris \cure \space \then \ally{All to full}
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Liquid Flame}
+    \varwb
+    \begin{round}{1}
+        \bartz Item \then \battleGroup{Equip \knife} \then Defend
+        \faris Item \then \battleGroup{\iceRod} \then Break
+    \end{round}
+    \begin{itemize}
+        \item \newbox\hand \sbox\hand{\textbf{\ul{Round 2 (Hand)}}} \bossHl{{\usebox\hand}} 
+        \begin{itemize}
+            \lenna Defend
+            \bartz Fight
+            \faris
+            \begin{itemize}
+                \item \textit{If Lenna or Bartz died:} Item \then \battleGroup{\phoenixDown}
+                \item \textit{Otherwise:} Item \then \battleGroup{Equip \iceRod } \then Break
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \newbox\tornado \sbox\tornado{\textbf{\ul{Round 2 (Tornado)}}} \bossHl{{\usebox\tornado}} 
+        \begin{itemize}
+            \lenna Item \then \battleGroup{\iceRod} \then Break
+        \end{itemize}
+    \end{itemize}
+    \varwe
+\end{boss}
+
+\end{paracol}

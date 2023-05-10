@@ -1,0 +1,130 @@
+\chapter{North Mountain}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+    
+\begin{enumerate}
+    \item You can use a Tent during the upcoming menu to save a Phoenix Down if necessary
+    \item Head to Carwen first
+\end{enumerate}
+
+\resume
+\begin{enumerate}[resume]
+    \item Grab the hidden \pickup{Ice Rod}
+    \item Make your way to North Mountain
+\end{enumerate}
+
+\begin{menu}{Before Entering North Mountain}
+	\varwb
+    \begin{itemMenu}
+        \potionMenu \ally{If necessary}
+    \end{itemMenu}
+    \begin{jobMenu}
+        \bartz Black Mage \textbf{(3\pointLeft)}
+        \lenna Black Mage \textbf{(3\pointLeft)}
+	\end{jobMenu}
+    \varwe
+\end{menu}
+
+\resume
+\vspace{0.25cm}
+\begin{enumerate}[resume]
+    \item Fight one encounter
+\end{enumerate}
+
+\begin{encounter}{RockGarter x2 (23 EXP)}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris Defend
+        \begin{notes}
+            \item[] \encounterNote{(Hold R+A)}
+        \end{notes}
+        \lenna \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+        \begin{notes}
+            \item[] \encounterNote{(\pointLeft)(3A)}
+        \end{notes}
+        \galuf Defend
+        \begin{notes}
+            \item[] \encounterNote{(Hold R+A)}
+        \end{notes}
+        \bartz \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+        \begin{notes}
+            \item[] \encounterNote{(\pointLeft)(3A)}
+        \end{notes}
+	\end{round}
+	\varwe
+\end{encounter}
+
+\switchcolumn
+\begin{steproute}{GalaCat}
+    \varwb
+	\begin{notes}
+		\item \stepHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+        \faris Item \then \battleGroup{Equip \daggerWeapon} \then Fight \then \enemy{GalaCat}
+        \lenna \leftCommand{\black} \then \fire \space \then \enemy{GalaCat}
+        \item \menuHl{Only need one more attack from here}
+        \galuf \leftCommand{\blue} \then \goblinPunch \space \then \enemy{GalaCat}
+        \bartz \leftCommand{\black} \then \fire \space \then \enemy{GalaCat}
+    \end{round}
+	\varwe
+\end{steproute}
+
+\begin{steproute}{GalaCat \& RockGarter x2}
+    \varwb
+	\begin{notes}
+		\item \stepHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris Item \then \battleGroup{Equip \daggerWeapon} \then Fight \then \enemy{GalaCat}
+        \lenna \leftCommand{\black} \then \fire \space \then \enemy{All}
+        \galuf \leftCommand{\blue} \then \goblinPunch \space \then \enemy{GalaCat}
+        \bartz \leftCommand{\black} \then \fire \space \then \enemy{All}
+	\end{round}
+	\varwe
+\end{steproute}
+
+\begin{steproute}{Blocks x2 \& RockGarter x2}
+    \varwb
+	\begin{notes}
+		\item \stepHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris Defend
+        \lenna \leftCommand{\black} \then \bolt \space \then \enemy{All}
+        \galuf Defend
+        \bartz \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+	\end{round}
+    \begin{round}{2}
+		\faris Defend
+        \lenna \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+	\end{round}
+	\varwe
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Magisa}
+    \varwb
+    \begin{bossPart}{During Her Opening Attack}
+        \item \bossMenu{\textbf{Ice Rod:} slot 1 \mbox{\pointRight} \textbf{Knife:} slot 3}
+        \vspace{1mm}
+        \item [] \insertBattleMenu{../Graphics/Battle/2. Magisa Menu.png}
+    \end{bossPart}
+    \begin{bossPart}{If Magisa Kills Faris}
+        \bartz Item \then \phoenixDown \space \then \ally{Faris}
+        \galuf Item \then \battleGroup{Equip \iceRod} \then Break
+    \end{bossPart}
+    \begin{bossPart}{If Magisa Kills Anyone Else}
+        \faris Item \then \phoenixDown \then \ally{Whoever died}
+        \anyone Item \then \battleGroup{Equip \knife} \then Fight \then \ally{Whoever died}
+        \anyone Item \then \battleGroup{Equip \iceRod} \then Break
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\end{paracol}

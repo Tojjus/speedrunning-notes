@@ -1,0 +1,152 @@
+\chapter{Floating Castle}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\vspace{-0.045cm}
+\begin{enumerate}
+    \item Take the right path outside (bottom door) after entering the Castle
+    \item Grab the \pickup{Running Shoes} chest and head to the castle basement
+\end{enumerate}
+
+\begin{menu}{Before Catastrophe}
+    \varwb
+    \begin{equipMenu}
+        \faris \optimize
+    \end{equipMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Catastrophe}
+    \varwb
+    \begin{bossPart}{Part 1}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\antidote \space + \turtleShell} \textit{(SPLIT SHELL)} \then \enemy{Catastrophe}
+        \faris[\bossHl{(1x)}] \leftCommand{\drink} \then \heroDrink
+    \end{bossPart}
+    \begin{bossPart}{Part 2}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\potion \space + \dragonFang} \textit{(DRAGON POWER)} \then \ally{Faris}
+        \lenna[\bossHl{(1x)}] \rightCommand{\dimenAbility} \then \float \space \then \ally{Faris}
+    \end{bossPart}
+    \begin{bossPart}{Part 3}
+        \faris[\bossHl{(3x)}] \rightCommand{\gilToss}
+        \bartz[\bossHl{(2x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \antidote} \textit{(SAMSON POWER)} \then \ally{Faris}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \lenna[\bossHl{(1x)}] Defend \textbf{or} \rightCommand{\dimenAbility} \then \float \space \then \ally{Faris}
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\vspace{-0.030cm}
+\begin{enumerate}[resume]
+    \item \battleGroup{Escape is the left command}
+    \item Head through the cell into the throne room
+\end{enumerate}
+
+\switchcolumn*
+\begin{steproute}{Before Halicarnassus}
+    \insertStep{../Graphics/Steps/201. Castle 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Halicarnassus}
+    \varwb
+    \begin{notes}
+        \item \bossNote{Faris can start Gil Tossing after being buffed twice}
+    \end{notes}
+    \begin{bossPart}{Part 1}
+        \bartz[\bossHl{(3x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \antidote} \textit{(SAMSON POWER)} \then \ally{Faris}
+        \faris[\bossHl{(1x)}] \leftCommand{\drink} \then \heroDrink
+        \cara[\bossHl{(1x)}] Defend
+        \lenna[\bossHl{(Rest)}] \leftCommand{\guard}
+        \faris[\bossHl{(2x)}] \rightCommand{\gilToss}
+    \end{bossPart}
+    \begin{bossPart}{Part 2}
+        \cara[\bossHl{(1x)}] \rightCommand{\gilToss}
+        \bartz Defend
+        \faris[\bossHl{(1x)}] \rightCommand{\gilToss}
+    \end{bossPart}
+    \begin{bossPart}{Part 3}
+        \cara Defend
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \antidote} \textit{(SAMSON POWER)} \then \ally{Faris}
+        \faris[\bossHl{(1x)}] \rightCommand{\gilToss}
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\begin{enumerate}[resume]
+    \item \battleGroup{Escape is the left command}
+    \item Continue onward to the outside area
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Twintania}
+    \insertStep{../Graphics/Steps/202. Castle 2.jpg}
+\end{steproute}
+
+\begin{misc}{Menu Here}
+    \insertScreenshot{../Graphics/Misc/21. Twintania Menu.png}
+\end{misc}
+
+\switchcolumn
+\begin{menu}{Before Twintania}
+    \varwb
+    \begin{itemMenu}
+        \maidensKissMenu \ally{Everyone}
+    \end{itemMenu}
+    \begin{abilityMenu}
+        \bartz \ability{!\hide \space in slot 1} \optimize
+    \end{abilityMenu}
+    \begin{jobMenu}
+        \lenna Blue Mage \textbf{(\pointDown)(\pointLeft)(\pointDown)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Twintania}
+    \varwb
+    \begin{bossPart}{Part 1}
+        \bartz \leftCommand{\hide}
+    \end{bossPart}
+    \begin{bossPart}{Part 2}
+        \item Wait until you cumulatively see 4 attacks or “Ineffective” prompts
+        \bartz \leftCommand{\showAbility}
+    \end{bossPart}
+    \begin{bossPart}{Part 3}
+        \bartz \rightCommand{\combine} \then \battleGroup{\hiPotion \space + \phoenixDown} \textit{(RESURRECTION)} \then \ally{Lenna} 
+        \item \bossHl{Don't run buffer Lenna's attack}
+        \item \bossNote{Wait for the text before queuing L.5 Death}
+        \lenna \leftCommand{\blue} \then \lfiveDeath
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\switchcolumnTwice[*]
+\begin{menu}{After Twintania}
+    \varwb
+    \begin{jobMenu}
+        \lenna White Mage \textbf{(2\pointRight)(\pointDown)}
+    \end{jobMenu}
+    \begin{itemMenu}
+        \elixirMenu \ally{Lenna}
+    \end{itemMenu}
+    \begin{magicMenu}
+        \lenna \life \space \then \ally{Everyone}
+    \end{magicMenu}
+    \begin{jobMenu}
+        \lenna Mystic Knight \textbf{(\pointRight)(\pointDown)} \optimize
+        \faris Freelancer \textbf{(\pointLeft)} \equip{\ribbon \space in head slot}
+    \end{jobMenu}
+    \begin{abilityMenu}
+        \bartz \ability{!\escape \space in slot 1} \optimize
+    \end{abilityMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn
+\begin{steproute}{After Twintania}
+    \insertStep{../Graphics/Steps/203. Castle 3.jpg}
+\end{steproute}
+
+\end{paracol}

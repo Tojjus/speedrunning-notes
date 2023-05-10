@@ -1,0 +1,18 @@
+## core latex auxiliary files
+*.aux
+*.fls
+*.log
+*.out
+*.toc
+
+## build tool auxiliary files
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+## mac files
+.DS_Store
+
+## folders
+*. (paracol)
+*.vscode

@@ -1,0 +1,96 @@
+\chapter{Ancient Library}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Make your way to the Ancient Library
+    \item If you need emergency healing you can use the left pot in the northern room
+\end{enumerate}
+
+\begin{boss}{Ifrit}
+    \varwb
+    \begin{round}{1}
+        \bartz Wait
+        \begin{itemize}
+            \item \textit{If Ifrit kills Lenna/Faris:} Item \then \battleGroup{\phoenixDown}
+            \item \textit{If Ifrit uses Flame:} \battleGroup{Defend}
+        \end{itemize}
+        \anyone
+        \begin{itemize}
+            \item \textit{If Bartz died:} Item \then \battleGroup{\phoenixDown}
+            \item \textit{Otherwise:} Item \then \battleGroup{Equip \iceRod } \then Break
+        \end{itemize}
+        \anyone Item \then \battleGroup{Equip \iceRod } \then Break
+    \end{round}
+    \varwe
+\end{boss}
+
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Stealth Robe} in the downstairs library room
+    \item Grab the \pickup{Phoenix Down} in the dark room chest
+\end{enumerate}
+
+\begin{menu}{Before Byblos}
+    \varwb
+    \begin{itemMenu}
+        \phoenixDownMenu \ally{Anyone dead}
+    \end{itemMenu}
+    \begin{magicMenu}
+        \faris \cure \space \then \ally{All to full}
+    \end{magicMenu}
+    \begin{jobMenu}
+        \faris Black Mage \textbf{(\pointDown)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Byblos}
+    \varwb
+    \begin{round}{1}
+        \bartz Wait
+        \begin{itemize}
+            \item \textit{If Byblos kills Galuf:} Item \then \battleGroup{\phoenixDown}
+            \item \textit{Otherwise:} \battleGroup{Defend}
+        \end{itemize}
+        \lenna Item \then \battleGroup{Equip \fireRod } \then Break
+        \faris Item \then \battleGroup{Equip \fireRod } \then Break
+    \end{round}
+    \begin{bossPart}{Menuing}
+        \item \bossMenu{\textbf{Blank:} slot 1 \mbox{\pointRight} \textbf{Flame Scroll:} slot 3}
+        \item \bossMenu{\textbf{Dagger:} down \mbox{\pointRight} \textbf{Ice Rods:} up}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/4. Byblos Menu.png}
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\begin{menu}{After Byblos}
+    \begin{jobMenu}
+        \faris Ninja \textbf{(3\pointRight)} \equip{\stealthRobe}
+        \lenna Mediator \textbf{(3\pointLeft)} \ability{!\black}
+    \end{jobMenu}
+\end{menu}
+
+\begin{encounter}{Page 64}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris \leftCommand{\throw} \then \broadsword
+        \bartz Defend
+        \lenna \rightCommand{\black} \then \fire
+        \galuf Defend
+	\end{round}
+    \begin{round}{2 (Onwards)}
+		\faris \leftCommand{\throw} \then \mythrilKnife
+        \bartz Defend
+        \item Wait until he uses L.5 Death
+        \lenna \leftCommand{\catch}
+	\end{round}
+	\varwe
+\end{encounter}
+
+\end{paracol}

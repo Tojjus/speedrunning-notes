@@ -1,0 +1,105 @@
+\chapter{North Mountain}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+    
+\begin{enumerate}
+    \item You can use a Tent during the upcoming menu to save a Phoenix Down if necessary
+    \item Head to Carwen first
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Carwen}
+    \insertStep{../Graphics/Steps/20. Carwen Enc 1.jpg}
+    \insertStep{../Graphics/Steps/21. Carwen 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\resume
+\begin{enumerate}[resume]
+    \item Grab the hidden \pickup{Ice Rod}
+    \item Make your way to North Mountain
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before North Mountain}
+    \insertStep{../Graphics/Steps/22. Carwen 2.jpg}
+    \insertStep{../Graphics/Steps/23. Carwen 3.jpg}
+    \insertStep{../Graphics/Steps/24. Carwen 4.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{Before Entering North Mountain}
+	\varwb
+    \begin{itemMenu}
+        \potionMenu \ally{If necessary}
+    \end{itemMenu}
+    \begin{jobMenu}
+        \bartz Black Mage \textbf{(3\pointLeft)}
+        \lenna Black Mage \textbf{(3\pointLeft)}
+	\end{jobMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn
+\begin{steproute}{Before RockGarter x2}
+    \insertStep{../Graphics/Steps/25. North Mountain 1 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/26. North Mountain 2 (Re-enter).jpg}
+    \insertStep{../Graphics/Steps/27. North Mountain Enc 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{encounter}{RockGarter x2}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\faris Defend
+        \begin{notes}
+            \item[] \encounterNote{(Hold R+A)}
+        \end{notes}
+        \lenna \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+        \begin{notes}
+            \item[] \encounterNote{(\pointLeft)(3A)}
+        \end{notes}
+        \galuf Defend
+        \begin{notes}
+            \item[] \encounterNote{(Hold R+A)}
+        \end{notes}
+        \bartz \leftCommand{\black} \then \fire \space \then \enemy{RockGarter}
+        \begin{notes}
+            \item[] \encounterNote{(\pointLeft)(3A)}
+        \end{notes}
+	\end{round}
+	\varwe
+\end{encounter}
+
+\switchcolumn
+\begin{steproute}{Before Magisa}
+    \insertStep{../Graphics/Steps/28. North Mountain 3.jpg}
+    \insertStep{../Graphics/Steps/29. North Mountain Enc 2.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Magisa}
+    \varwb
+    \begin{bossPart}{During Her Opening Attack}
+        \item \bossMenu{\textbf{Ice Rod:} slot 1 \mbox{\pointRight} \textbf{Knife:} slot 3}
+        \vspace{1mm}
+        \item [] \insertBattleMenu{../Graphics/Battle/2. Magisa Menu.png}
+    \end{bossPart}
+    \begin{bossPart}{If Magisa Kills Faris}
+        \bartz Item \then \phoenixDown \space \then \ally{Faris}
+        \galuf Item \then \battleGroup{Equip \iceRod} \then Break
+    \end{bossPart}
+    \begin{bossPart}{If Magisa Kills Anyone Else}
+        \faris Item \then \phoenixDown \then \ally{Whoever died}
+        \anyone Item \then \battleGroup{Equip \knife} \then Fight \then \ally{Whoever died}
+        \anyone Item \then \battleGroup{Equip \iceRod} \then Break
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\end{paracol}

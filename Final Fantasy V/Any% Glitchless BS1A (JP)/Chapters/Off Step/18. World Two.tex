@@ -1,0 +1,126 @@
+\chapter{World Two}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{menu}{After Gaining Control}
+    \varwb
+    \begin{itemMenu}
+        \item \cottage
+    \end{itemMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Abductor}
+	\varwb
+	\begin{round}{1}
+		\bartz Fight \then \ally{Bartz}
+    \end{round}
+	\varwe
+\end{boss}
+
+\switchcolumn*
+\begin{misc}{Menu Here}
+    \includegraphics[scale=0.157]{../Graphics/Misc/12. Gilgamesh Menu.png}
+\end{misc}
+
+\switchcolumn
+\begin{menu}{Before Reaching Gilgamesh}
+    \varwb
+    \begin{jobMenu}
+        \galuf Samurai \textbf{(\pointLeft)(\pointDown)} \ability{!\white}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Gilgamesh}
+	\varwb
+	\begin{round}{1}
+        \galuf \leftCommand{\gilToss}
+    \end{round}
+	\varwe
+\end{boss}
+
+\begin{enumerate}
+    \item Make your way to the Big Bridge
+\end{enumerate}
+
+\begin{encounter}{Lil' Chariot x3}
+	\varwb
+	\begin{round}{1}
+		\bartz Defend
+        \lenna \leftCommand{\throw} \then \thunderScroll
+    \end{round}
+	\varwe
+\end{encounter}
+
+\begin{enumerate}[resume]
+    \item Left until the 2nd tower then right until the chamber
+\end{enumerate}
+
+\switchcolumn*
+\begin{misc}{Menu Here}
+    \insertScreenshot{../Graphics/Misc/13. Gilagmesh 2 Menu.png}
+\end{misc}
+
+\switchcolumn
+\begin{menu}{Before Gilgamesh}
+    \varwb
+    \begin{jobMenu}
+        \lenna Samurai \textbf{(\pointLeft)(\pointDown)} \optimize
+        \bartz Samurai \textbf{(\pointLeft)(\pointDown)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \galuf \cure \space \then \ally{All to full}
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Gilgamesh}
+	\varwb
+	\begin{round}{1}
+        \faris Defend
+        \lenna \leftCommand{\gilToss}
+        \bartz \leftCommand{\gilToss}
+        \galuf \leftCommand{\gilToss}
+    \end{round}
+    \begin{round}{2 (Onwards)}
+        \faris Wait for Lenna's ATB \then \leftCommand{\gilToss}
+        \item \bossMenu{\textbf{Phoenix Downs:} slot 6 \mbox{\pointRight} \textbf{HiPotions:} slot 2}
+        \item \bossMenu{Move other items down 2-3 rows to make space}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/7. Gilgamesh Menu.png}
+        \lenna \leftCommand{\gilToss} 
+        \anyone \leftCommand{\gilToss}
+        \anyone \leftCommand{\gilToss}
+    \end{round}
+	\varwe
+\end{boss}
+
+\switchcolumnTwice[*]
+\begin{menu}{After Gilgamesh}
+    \varwb
+    \begin{jobMenu}
+        \bartz White Mage \textbf{(\pointDown)(2\pointRight)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \bartz \life \space \then \ally{Anyone dead}
+        \bartz \cure \space \then \ally{All to full}
+    \end{magicMenu}
+    \begin{jobMenu}
+        \bartz Thief \textbf{(2\pointRight)} \ability{!\escape}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+    \item Left until just before the 2nd tower and then do this movement
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Big Bridge Movement}
+    \insertScreenshot{../Graphics/Misc/14. Big Bridge Movement.png}
+\end{misc}
+
+\end{paracol}

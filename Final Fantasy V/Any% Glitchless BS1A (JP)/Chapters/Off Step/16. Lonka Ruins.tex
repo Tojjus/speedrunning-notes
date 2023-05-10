@@ -1,0 +1,100 @@
+\chapter{Lonka Ruins}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item \battleGroup{Escape is the right command}
+    \item Grab the \pickup{Gold Armor} chest on the 2nd screen
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Before HiPotion Chest}
+    \insertStep {../Graphics/Steps/76. Lonka Ruins 2.jpg}
+\end{misc}
+
+\switchcolumn
+\resume
+\begin{enumerate}[resume]
+    \item Grab the \pickup{HiPotion} after this screen
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Before Treasure Room}
+    \insertStep{../Graphics/Steps/77. Lonka Ruins 3.jpg}
+\end{misc}
+
+\switchcolumn
+\newpage
+\begin{enumerate}[resume]
+    \item Grab all five chests in the treasure room: \pickup{Shuriken, 5000 Gil, Ancient Sword, Full Moon, and Power Ring}
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Treasure Room}
+    \insertMisc{../Graphics/Misc/10. Lonka Ruins Chests.png}
+\end{misc}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Cabin} and \pickup{Ether} chests after this screen
+\end{enumerate}
+
+\switchcolumn
+\begin{misc}{Before Cabin and Ether Chests}
+    \insertStep{../Graphics/Steps/82. Lonka Ruins 7.jpg}
+\end{misc}
+
+\switchcolumn
+\begin{menu}{Before Archeoaevis}
+    \varwb
+    \begin{notes}
+        \item \menuHl{Heal if necessary}
+    \end{notes}
+    \begin{jobMenu}
+        \bartz Blue Mage \textbf{(\pointDown)(4\pointRight)} \optimize \space \equip{\thunderRod}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Archeoaevis}
+	\varwb
+	\begin{round}{1}
+		\lenna \leftCommand{\throw} \then \thunderScroll
+        \galuf Defend
+        \item \bossHl{Don't run buffer Faris or Bartz's turns}
+        \item \bossHl{Lenna should be nearly at full ATB after Bartz's turn}
+        \faris \leftCommand{\gaia}
+        \bartz Item \then \battleGroup{\thunderRod} \then Break
+	\end{round}
+    \begin{round}{2}
+        \lenna \leftCommand{\throw} \then \thunderScroll
+        \galuf Defend
+        \faris \leftCommand{\gaia}
+        \lenna \leftCommand{\throw} \then \thunderScroll
+        \bartz Defend
+    \end{round}
+    \begin{round}{3}
+        \galuf \leftCommand{\throw} \then \thunderScroll
+        \faris \leftCommand{\gaia}
+        \lenna \leftCommand{\throw} \then \shuriken
+        \galuf \leftCommand{\throw} \then \ancientSword
+    \end{round}
+    \begin{round}{4 (After Transition)}
+        \bartz \leftCommand{\blue} \then \lfiveDeath
+    \end{round}
+	\varwe
+\end{boss}
+
+\begin{menu}{After Archeoaevis}
+    \varwb
+    \begin{jobMenu}
+        \lenna Thief \textbf{(2\pointRight)} \ability{!\tame}
+        \galuf Thief \textbf{(2\pointRight)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\end{paracol}
+\newpage

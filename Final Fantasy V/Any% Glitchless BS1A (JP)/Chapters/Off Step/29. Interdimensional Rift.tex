@@ -1,0 +1,147 @@
+\chapter{Interdimensional Rift}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item \battleGroup{Escape is the right command}
+    \item Make your way through the Desert
+    \item Make your way through Mirage
+    \item Make your way through the Forest
+\end{enumerate}
+
+\begin{misc}{Path Through the Forest}
+    \begin{itemize}
+        \item Right and up
+        \item Left around the tree
+        \item Up+right to the chest
+    \end{itemize}
+\end{misc}
+
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Dragon Fang} chest at the top of the first screen
+\end{enumerate}
+
+\begin{misc}{Path Through the Forest}
+    \begin{itemize}
+        \item Stick to the bottom edge as you go right
+        \item Right until you hit a tree
+        \item Down until you are horizontal to the left chest
+        \item Right until you see a chest below
+    \end{itemize}
+\end{misc}
+
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Ribbon} chest at the base of the tree
+\end{enumerate}
+
+\begin{misc}{Path Through the Forest}
+    \begin{itemize}
+        \item Down to Calofisteri
+    \end{itemize}
+\end{misc}
+
+\begin{menu}{Before Calofisteri}
+    \varwb
+    \begin{jobMenu}
+        \faris Blue Mage \textbf{(\pointDown)(\pointLeft)(\pointDown)} \equip{\runningShoes}
+        \cara Blue Mage \textbf{(\pointDown)(\pointLeft)(\pointDown)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Calofisteri}
+    \varwb
+    \begin{round}{1}
+        \item Wait for her attack
+        \item Queue L.2 Old during her attack animation
+    \end{round}
+    \begin{round}{2}
+        \faris \leftCommand{\blue} \then \ltwoOld
+        \item \bossHl{Wait for 17 total "Can't run!!" messages}
+        \item \bossNote{Have her selected and input when you see the 17th message disappear}
+        \cara \leftCommand{\blue} \then \lfiveDeath
+    \end{round}
+    \begin{bossPart}{If Reflect or Cara Dies}
+        \lenna \leftCommand{\dimenAbility} \then \reset
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\begin{menu}{After Calofisteri}
+    \varwb
+    \begin{jobMenu}
+        \cara White Mage \textbf{(2\pointRight)(\pointDown)}
+        \lenna Knight \textbf{(A)} \ability{!\dimenAbility} \optimize
+    \end{jobMenu}
+    \begin{magicMenu}
+        \lenna \float \space \then \ally{Cara}
+        \cara \size \space \then \ally{Lenna}
+        \cara \life \space \then \ally{Anyone dead}
+    \end{magicMenu}
+    \begin{equipMenu}
+        \faris \unequip{All}
+        \bartz \optimize
+    \end{equipMenu}
+    \begin{jobMenu}
+        \faris Chemist \textbf{(\pointUp)(\pointRight)} \ability{!\gilToss}
+        \cara Thief \textbf{(2\pointRight)}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+    \item \battleGroup{Escape is the left command}
+    \item Hold B when transitioning out of the save room and dodge Omega around the bottom
+\end{enumerate}
+
+\begin{menu}{Before Opening the Book}
+    \varwb
+    \begin{jobMenu}
+        \cara Samurai \textbf{(\pointLeft)(\pointDown)}
+    \end{jobMenu}
+    \begin{rowMenu}
+        \caraFarisBartz Frontrow
+        \swap Cara \switch Faris
+    \end{rowMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Apanda}
+    \varwb
+    \begin{bossPart}{Part 1}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \antidote} \textit{(SAMSON POWER)} \then \ally{Faris}
+        \faris[\bossHl{(1x)}] \leftCommand{\drink} \then \speedDrink
+        \cara[\bossHl{(Rest)}] Defend
+        \lenna[\bossHl{(Rest)}] \leftCommand{\guard}
+    \end{bossPart}
+    \begin{bossPart}{Part 2}
+        \bartz[\bossHl{(1x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \maidensKiss} \textit{(KISS OF BLESSING)} \then \enemy{Apanda}
+    \end{bossPart}
+    \begin{bossPart}{Part 3}
+        \faris[\bossHl{(2x)}] \leftCommand{\drink} \then \heroDrink
+        \bartz[\bossHl{(2x)}] \rightCommand{\combine} \then \battleGroup{\revivify \space + \antidote} \textit{(SAMSON POWER)} \then \ally{Faris}
+    \end{bossPart}
+    \begin{bossPart}{Part 4}
+        \faris[\bossHl{(3x)}] \rightCommand{\gilToss}
+        \bartz[\bossHl{(Rest)}] Defend
+    \end{bossPart}
+    \varwe
+\end{boss}
+
+\switchcolumnTwice[*]
+\begin{menu}{After Apanda}
+    \varwb
+    \begin{jobMenu}
+        \cara Thief \textbf{(2\pointRight)} \ability{!\gilToss}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+    \item \battleGroup{Escape is the left command}
+    \item Make your way through the Sky Pillars
+\end{enumerate}
+
+\end{paracol}

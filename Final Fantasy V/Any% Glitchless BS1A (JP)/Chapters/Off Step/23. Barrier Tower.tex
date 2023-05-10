@@ -1,0 +1,99 @@
+\chapter{Barrier Tower}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Start heading up the tower
+    \item Grab the \pickup{9000 Gil} chest on the 2nd floor
+    \item Grab the \pickup{18000 Gil} chest on the 6th floor
+    \item Take the right stairwell on the 9th floor
+\end{enumerate}
+
+\begin{boss}{Atomos}
+	\varwb
+	\begin{bossPart}{Part 1}
+		\galufLenna[\bossHl{(Rest)}] Defend
+        \bartz \leftCommand{\drink} \then \heroDrink
+        \bartz \leftCommand{\drink} \then \speedDrink
+        \bartz \leftCommand{\drink} \then \heroDrink
+        \bartz \leftCommand{\drink} \then \heroDrink
+	\end{bossPart}
+    \begin{bossPart}{Part 2}
+        \bartz[\bossHl{(4x)}] \rightCommand{\gilToss}
+        \item \bossMenu{Previous menuing if needed}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/9. Gilgamesh 2 Menu.png}
+	\end{bossPart}
+	\varwe
+\end{boss}
+
+\begin{enumerate}[resume]
+    \item Enter the submarine, return, wait for Galuf to finish grieving
+    \item Head to Guido's Cave
+\end{enumerate}
+
+\begin{misc}{Path to Guido's Cave}
+    \begin{itemize}
+        \item East until you hit a set of rocks
+        \item North until you see rocks on the far left side of the screen
+        \item West until you hit rocks
+        \item North until you see the cave
+    \end{itemize}
+\end{misc}
+
+\begin{menu}{After Arriving at Guido's Cave}
+    \varwb
+    \begin{jobMenu}
+        \bartz Ninja \textbf{(\pointLeft)(\pointDown)(\pointLeft)} \ability{!\escape} \optimize
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{encounter}{Radiator x2 (400 EXP)}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\bartz \leftCommand{\throw} \then \flameScroll
+	\end{round}
+	\varwe
+\end{encounter}
+
+\begin{enumerate}[resume]
+    \item Chest order is: middle \then top left \then \battleGroup{enter the new room} \then top left \then bottom left
+\end{enumerate}
+
+\switchcolumnTwice[*]
+\begin{encounter}{Radiator x4 (1066 EXP)}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\bartz \leftCommand{\throw} \then \flameScroll
+	\end{round}
+	\varwe
+\end{encounter}
+
+\switchcolumn
+\begin{steproute}{Radiator x4 Backup}
+    If you can't find a Radiator x4 encounter (rare) there is a backup outside Moore
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{After Reaching the End}
+    \varwb
+    \begin{jobMenu}
+        \lenna Time Mage \textbf{(2\pointLeft)(\pointUp)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \lenna \exit
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\end{paracol}
+\newpage

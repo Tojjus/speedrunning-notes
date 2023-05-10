@@ -1,0 +1,143 @@
+\chapter{Barrier Tower}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Start heading up the tower
+    \item Grab the \pickup{9000 Gil} chest on the 2nd floor
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before the 18000 Gil Chest}
+    \insertStep{../Graphics/Steps/127. Barrier Tower 1.jpg}
+    \insertStep{../Graphics/Steps/128. Barrier Tower 2.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Grab the \pickup{18000 Gil} chest on the 6th floor
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before the 9th Floor}
+    \insertStep{../Graphics/Steps/129. Barrier Tower 3.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{enumerate}[resume]
+    \item Take the right stairwell on the 9th floor
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Atomos}
+    \insertStep{../Graphics/Steps/130. Barrier Tower 4.jpg}
+    \insertStep{../Graphics/Steps/131. Barrier Tower 5.jpg}
+    \insertStep{../Graphics/Steps/132. Barrier Tower Enc 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{boss}{Atomos}
+	\varwb
+	\begin{bossPart}{Part 1}
+		\galufLenna[\bossHl{(Rest)}] Defend
+        \bartz \leftCommand{\drink} \then \heroDrink
+        \bartz \leftCommand{\drink} \then \speedDrink
+        \bartz \leftCommand{\drink} \then \heroDrink
+        \bartz \leftCommand{\drink} \then \heroDrink
+	\end{bossPart}
+    \begin{bossPart}{Part 2}
+        \bartz[\bossHl{(4x)}] \rightCommand{\gilToss}
+        \item \bossMenu{Previous menuing if needed}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/9. Gilgamesh 2 Menu.png}
+	\end{bossPart}
+	\varwe
+\end{boss}
+
+\begin{enumerate}[resume]
+    \item Enter the submarine, return, wait for Galuf to finish grieving
+    \item Head to Guido's Cave
+\end{enumerate}
+
+\begin{misc}{Path to Guido's Cave}
+    \begin{itemize}
+        \item East until you hit a set of rocks
+        \item North until you see rocks on the far left side of the screen
+        \item West until you hit rocks
+        \item North until you see the cave
+    \end{itemize}
+\end{misc}
+
+\begin{menu}{After Arriving at Guido's Cave}
+    \varwb
+    \begin{jobMenu}
+        \bartz Ninja \textbf{(\pointLeft)(\pointDown)(\pointLeft)} \ability{!\escape} \optimize
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\switchcolumn*
+\begin{steproute}{Radiator x2}
+    \insertStep{../Graphics/Steps/133. Guido's Cave Enc 1.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{encounter}{Radiator x2}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\bartz \leftCommand{\throw} \then \flameScroll
+	\end{round}
+	\varwe
+\end{encounter}
+
+\newpage
+\begin{enumerate}[resume]
+    \item Chest order is: middle \then top left \then \battleGroup{enter the new room} \then top left \then bottom left
+\end{enumerate}
+
+\switchcolumn
+\begin{steproute}{Before Radiator x4}
+    \insertStep{../Graphics/Steps/134. Guido's Cave Enc 2.jpg}
+    \insertStep{../Graphics/Steps/135. Guido's Cave 1.jpg}
+    \insertStep{../Graphics/Steps/136. Guido's Cave Enc 3.jpg}
+    \insertStep{../Graphics/Steps/137. Guido's Cave Enc 4.jpg}
+    \insertStep{../Graphics/Steps/138. Guido's Cave Enc 5.jpg}
+    \insertStep{../Graphics/Steps/139. Guido's Cave 2.jpg}
+    \insertStep{../Graphics/Steps/140. Guido's Cave Enc 6.jpg}
+\end{steproute}
+
+\switchcolumn*
+\begin{encounter}{Radiator x4}
+	\varwb
+	\begin{notes}
+		\item \encounterHl{Don't flee buffer}
+	\end{notes}
+	\begin{round}{1}
+		\bartz \leftCommand{\throw} \then \flameScroll
+	\end{round}
+	\varwe
+\end{encounter}
+
+\switchcolumn
+\begin{steproute}{Before the End}
+    \insertStep{../Graphics/Steps/141. Guido's Cave 3.jpg}
+\end{steproute}
+
+\switchcolumn
+\begin{menu}{After Reaching the End}
+    \varwb
+    \begin{jobMenu}
+        \lenna Time Mage \textbf{(2\pointLeft)(\pointUp)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \lenna \exit
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\end{paracol}

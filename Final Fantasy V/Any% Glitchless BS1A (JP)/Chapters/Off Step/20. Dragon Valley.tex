@@ -1,0 +1,90 @@
+\chapter{Dragon Valley}
+
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{enumerate}
+    \item Grab the \pickup{Exit} spell in the bottom left of the throne room
+    \item Go to Cara on the rooftop
+    \item Make your way to Kelb
+\end{enumerate}
+
+\begin{boss}{Abductor}
+	\varwb
+	\begin{round}{1}
+		\galuf Defend
+        \faris \leftCommand{\gilToss}
+    \end{round}
+	\varwe
+\end{boss}
+
+\begin{menu}{After Abductor}
+    \varwb
+    \begin{itemMenu}
+        \hiPotionMenu \ally{Whoever was hit by Abductor}
+    \end{itemMenu}
+    \begin{jobMenu}
+        \bartz Thief \textbf{(2\pointRight)} \ability{!\escape} \optimize
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+    \item Enter the biggest mansion, walk one tile inside, then leave
+    \item Head north to Dragon Valley
+\end{enumerate}
+
+\switchcolumn*
+\begin{steproute}{Extra Chest}
+    Grab the \pickup{5000 Gil} chest in the cave on the first screen
+\end{steproute}
+
+\switchcolumn
+\resume
+\begin{enumerate}[resume]
+    \item Grab the \pickup{Bone Mail} on the pile of bones
+    \item Grab the \pickup{7000 Gil} after activating the switch
+    \item Grab the \pickup{Coronet} and \pickup{Air Blade} southern part of the cave
+    \item Grab the \pickup{Phoenix Down} before exiting the last cave
+\end{enumerate}
+
+\begin{menu}{Before Hiryuu Plant}
+    \varwb
+    \begin{jobMenu}
+        \bartz Samurai \textbf{(\pointLeft)(\pointDown)} \equip{\dancingDagger}
+    \end{jobMenu}
+    \varwe
+\end{menu}
+
+\begin{boss}{Hiryuu Plant}
+    \varwb
+    \begin{round}{1}
+        \galuf Defend
+        \faris \leftCommand{\gilToss}
+        \bartz \leftCommand{\gilToss}
+        \item \bossMenu{\textbf{Gold Armor:} slot 1 \mbox{\pointRight} \textbf{Power Wrist:} up}
+        \vspace{1mm}
+        \item[] \insertBattleMenu{../Graphics/Battle/8. Hiryuu Menu.png}
+        \lenna Defend
+    \end{round}
+    \begin{round}{2}
+        \galuf Defend
+        \faris \leftCommand{\gilToss}
+        \bartz \leftCommand{\gilToss}
+    \end{round}
+    \varwe
+\end{boss}
+
+\begin{menu}{After Hiryuu Plant}
+    \varwb
+    \begin{jobMenu}
+        \faris Time Mage \textbf{(2\pointLeft)(\pointUp)}
+    \end{jobMenu}
+    \begin{magicMenu}
+        \faris \exit
+    \end{magicMenu}
+    \varwe
+\end{menu}
+
+\end{paracol}

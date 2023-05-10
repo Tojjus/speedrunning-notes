@@ -1,0 +1,180 @@
+\chapter{Ecruteak City}
+\vspace{0.5mm}
+
+\begin{paracol}{2}
+\begin{enumerate}
+	\item Grab the hidden \pickup{Hyper Potion} if low on healing items
+	\item Head to the second house on the right (an old man is standing beside the sign)
+\end{enumerate}
+
+\switchcolumn
+\begin{items}{Hidden Hyper Potion}
+	\varwb
+	\insertScreenshot{../Graphics/5. Hidden Hyper Potion.png}
+	\varwe
+\end{items}
+
+\switchcolumn
+\begin{trainer}{Kimono Girls}
+	\varwb
+	\begin{notes}
+		\item \trainerHlThree{9-12 DV SPD} \pointRight{} right to left
+		\item \trainerHlThree{Otherwise} \pointRight{} left to right
+	\end{notes}
+	\begin{fightSection}{Flareon}
+		\item \trainerHl{(2)} \headbutt{} \trainerHlTwo{2x}
+	\end{fightSection}
+	\begin{fightSection}{Espeon}
+		\item \trainerHl{(2)} \headbutt{} \trainerHlTwo{2x}
+		\item \trainerHl{(1)} \bite{}
+	\end{fightSection}
+	\begin{fightSection}{Umbreon}
+		\item \trainerHl{(2)} \headbutt{} \trainerHlTwo{3x}
+		\item \trainerHl{(4)} \waterGun{}
+	\end{fightSection}
+	\begin{fightSection}{Vaporeon}
+		\item \trainerHl{(2)} \headbutt{} \trainerHlTwo{2x}
+		\item \trainerHl{(1)} \bite{}
+	\end{fightSection}
+	\begin{notes}
+		\item \trainerHlTwo{Heal if $<$45 HP}
+	\end{notes}
+	\begin{fightSection}{Jolteon}
+		\item \trainerHl{(2)} \headbutt{}
+		\item \trainerHl{(3)} \scratch{}
+	\end{fightSection}
+	\varwe
+\end{trainer}
+
+\switchcolumn
+\begin{menu}{Conditional Heal Before Jolteon}
+	\varwb
+	\begin{packMenu}
+		\item \superPotion{} \textit{(if $<$45 HP)}
+	\end{packMenu}
+	\varwe
+\end{menu}
+
+\switchcolumn
+\begin{enumerate}[resume]
+	\item \dialog{Get HM03 (Surf) from the man with the hat}
+\end{enumerate}
+
+\begin{menu}{After Getting Surf}
+	\varwb
+	\begin{packMenu}
+		\small{\item \superPotion{} \textit{(if necessary)}}
+		\item \menuHlTwo{(\pointLeft{})} \textbf{H3 \surf{}} \switch{} \scratch{} \menuHlTwo{(3)}
+		\item \bike
+	\end{packMenu}
+	\varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+	\item Head southwest to Morty's Gym
+\end{enumerate}
+
+\switchcolumn
+\vspace{4.7cm}
+\begin{story}{Morty's Gym Path}
+	\varwb
+	\insertPath{../Graphics/6. Morty's Gym.png}
+	\varwe
+\end{story}
+
+\switchcolumn
+\begin{trainer}{Sage Ping}
+	\varwb
+	\begin{fightSection}{Gastly/Gastly/Gastly/Gastly/Gastly}
+		\item \trainerSwap{\textbf{(1)} \bite{} \switch{} \textbf{(3)} \surf}
+		\item \trainerHl{(1)} \surf{} \trainerHlTwo{5x}
+	\end{fightSection}
+	\varwe
+\end{trainer}
+
+\begin{trainer}{Sage Jeffrey}
+	\varwb
+	\begin{fightSection}{Haunter}
+		\item \trainerHl{(3)} \bite{} \trainerHlTwo{2x}
+		\begin{notes}
+			\small{\item \trainerHl{(3)} \bite{} + \trainerHl{(4)} \waterGun{} \textit{(if 15 DV SPC)}}
+		\end{notes}
+	\end{fightSection}
+	\varwe
+\end{trainer}
+
+\switchcolumn
+\begin{menu}{Conditional Heal Before Morty}
+	\varwb
+	\begin{packMenu}
+		\item \superPotion{} \textit{(if necessary)}
+	\end{packMenu}
+	\varwe
+\end{menu}
+
+\begin{misc}{When You Hit L28}
+	\varwb
+	\begin{notes}
+		\item \emphasis{B \pointRight{} A to cancel learning Scary Face}
+	\end{notes}
+	\varwe
+\end{misc}
+
+\switchcolumn
+\begin{trainer}{Medium Martha}
+	\varwb
+	\begin{fightSection}{Gastly}
+		\item \trainerHl{(1)} \surf
+	\end{fightSection}
+	\begin{fightSection}{Haunter}
+		\item \trainerHl{(3)} \bite
+		\item \trainerHl{(4)} \waterGun
+	\end{fightSection}
+	\begin{fightSection}{Gastly}
+		\item \trainerHl{(1)} \surf
+	\end{fightSection}
+	\varwe
+\end{trainer}
+
+\begin{boss}{Morty}
+	\varwb
+	\begin{fightSection}{Gastly}
+		\item \xSpeed
+		\item \xSpecial
+		\item \bossSwap{\textbf{(1)} \surf{} \switch{} \textbf{(4)} \waterGun}
+		\item \bossHl{(3)} \bite{}
+		\begin{notes}
+			\small{\item \bossHl{(1)} \waterGun{} \textit{(if Curse)}}
+		\end{notes}
+	\end{fightSection}
+	\begin{fightSection}{Haunter}
+		\item \bossHl{(3)} \bite
+	\end{fightSection}
+	\begin{fightSection}{Gengar}
+		\item \bossHl{(3)} \bite
+		\item \bossHl{(4)} \surf
+	\end{fightSection}
+	\begin{fightSection}{Haunter}
+		\item \bossHl{(4)} \surf
+	\end{fightSection}
+	\varwe
+\end{boss}
+
+\begin{menu}{Before Route 38}
+	\varwb
+	\begin{packMenu}
+		\small{\item \superPotion{} \textit{(if necessary)}}
+		\item \repel 
+		\item \bike
+	\end{packMenu}
+	\varwe
+\end{menu}
+
+\begin{enumerate}[resume]
+	\item Head west and bike down Route 38
+	\item Stay near the bottom and then up the patch of grass \emphasis{(staying on the left side)}
+	\item Head south and \emphasis{stick to the left side, jumping off the ledges}
+\end{enumerate}
+
+\end{paracol}
+\vspace{3.5mm}
